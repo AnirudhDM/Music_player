@@ -1,0 +1,21 @@
+.carousel-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  margin-bottom: 20px;
+}
+
+.carousel {
+  width: 100%;
+  max-width: 1400px;
+  height: 480px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
