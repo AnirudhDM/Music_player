@@ -1,0 +1,34 @@
+{
+  // Codility JSON Spec — https://gitlab.codility.net/product/evaluations/codility-json-cli/-/blob/main/docs/markdown/codility_json_spec.md
+  "name": "music-player-3d-carousel",
+  "synopsis": "Build a 3D carousel music player with audio playback in React",
+
+  "duringCandidateSession": {
+    // Candidates cannot modify these — reference assets and entry point are locked
+    "readOnlyFiles": [
+      "public/songs/**",
+      "src/assets/**",
+      "src/main.jsx",
+      "index.html",
+      "vite.config.js",
+      "package.json",
+      "eslint.config.js"
+    ],
+    // Only src files are submitted for evaluation
+    "submittableFiles": [
+      "src/**/*.jsx",
+      "src/**/*.css",
+      "src/**/*.js"
+    ],
+    // Exclude generated/dependency directories from submission
+    "excludeSubmittableFiles": [
+      "node_modules/**",
+      "dist/**"
+    ]
+  },
+
+  // No automated test evaluation — this is a UI recreation task assessed manually
+  "evaluation": {
+    "commands": null
+  }
+}

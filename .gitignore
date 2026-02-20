@@ -17,6 +17,14 @@ dist-ssr
 !.vscode/extensions.json
 .idea
 .DS_Store
+
+# Docs
+docs/.CLAUDE_CODE_MCP_SETUP.md
+
+# Local secrets — never commit
+.mcp.json
+.env
+.envrc
 *.suo
 *.ntvs*
 *.njsproj
