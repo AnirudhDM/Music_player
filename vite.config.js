@@ -8,5 +8,6 @@ export default defineConfig({
     host: true,   // Exposes on 0.0.0.0 — required for Codility's VS Code webview preview
     port: 5173,
     strictPort: true,
+    allowedHosts: 'all',
   },
 })

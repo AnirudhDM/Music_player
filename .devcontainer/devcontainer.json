@@ -1,6 +1,6 @@
 {
-  "image": "public.ecr.aws/docker/library/node:22.10-bookworm-slim",
-  "postCreateCommand": "npm install",
+  "image": "node:22.10-bookworm-slim",
+  "postCreateCommand": "rm -rf node_modules && npm install",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -11,14 +11,14 @@
       ]
     },
     "codility": {
-      "extensions": ["continue-1.3.28"]
+      "extensions": []
     }
   },
   "forwardPorts": [5173],
   "portsAttributes": {
     "5173": {
       "label": "Vite Dev Server",
-      "onAutoForward": "silent"
+      "onAutoForward": "openPreview"
     }
   }
 }
